@@ -1,0 +1,661 @@
+// Variables
+$mobilew: 100%;
+$mobilemx: 720px;
+$tabletw: 720px;
+$escritoriow: 1080px;
+$rosa: #cc9fa2;
+$azul:#2a1e5c;
+$blanco:rgb(245,245,245);
+
+a{
+    color: $rosa;
+    text-decoration: none;
+    :hover{
+        color:$rosa;
+        text-decoration: none;
+    }
+}
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+body{
+    font-family: 'Quicksand', sans-serif;
+    color:$azul;
+    background: $blanco;
+}
+#container {
+    min-height:100%;
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#body {
+    padding-bottom:150px;
+}
+#footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+.paddingbot__uno{
+    padding-bottom: 1%;
+}
+/* Sticky */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+}
+.ancho__100{
+    width: $mobilew;
+}
+/* Mobile */
+@media (min-width: 360px){
+    body{
+        font-size: 1.15rem;
+    }
+    /* Navegador */
+    .contenedor__header--mobile{
+        display: flex;
+        justify-content: space-around;
+        border-bottom:$rosa 1px;
+        background-color: $blanco ;
+        max-width: $tabletw;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        padding-bottom: 0.2rem;
+        margin-bottom: 0.5rem;
+        height: 100%;
+        font-size: 1.5rem;
+        width: $mobilew;
+        a{
+            color: $rosa;
+        }
+    }
+    .contenedor__header--tablet{
+        display: none;
+    }
+    .contenedor__header--escritorio{
+        display: none;
+    }
+    /* Main */
+    .titulo{
+        color: $azul;
+        font-size: 1.4rem;
+        align-self: flex-start;
+        :hover{
+            color: $azul;
+        }
+    }
+
+    .contenedor__recomendados{
+        display: flex;
+        flex-direction: column;
+        max-width: $tabletw;
+        width: $mobilew;
+        height: 100%;
+        
+    }
+    .contenedor__libros{
+    display: flex;
+    flex-direction: column;
+    max-width: $tabletw;
+    width: $mobilew;
+    height: 100%;
+    align-items: center;
+    }
+
+    .contenedor__libros--caja{
+        height: 100%;
+        width: 75%;
+        display: flex;
+        flex-direction: row;
+        padding-top: 4%;
+        align-items: center;
+        gap: 20%;
+        justify-content: flex-start;
+    }
+    .contenedor__libros img{
+        width: 8rem;
+        height: 13rem;
+        border-radius: 2.5%;
+    }
+    
+    /* Subscripcion */
+    .contenedor__subscripcion{
+        display: flex;
+        flex-direction: column;
+        max-width: $tabletw;
+        width: $mobilew;
+        height: auto;
+        align-items: center;
+        padding: 5%;
+    }
+    .sub{
+        display: flex;
+        flex-direction: column;
+        width: $mobilew;
+        height: 100%;
+        align-items: center;
+        background-color: $azul;
+        color: #dddfdf;
+        font-size: 1.5rem;
+        padding: 5%;
+        margin-bottom: 5%;
+        border-radius: 2.5%;
+        p{
+            font-size: 1.1rem;
+            margin: 0%;
+            padding: 1%;
+        }
+
+    }
+    .boton__subMobile{
+        background-color: $rosa;
+        border-color: $rosa;
+        align-self: center;
+        margin-bottom: 1.5%;
+        margin-top: 1.5%;
+        :hover   {
+            background-color: #a07174;
+            border-color: $rosa;
+        }
+        :focus   {
+            background-color: #a07174;
+            border-color: $rosa;
+        
+        }
+    }
+    .boton__sub{
+        display: none;
+    }
+
+    /* Eventos */
+    .contenedor__eventos{
+        display: flex;
+        flex-direction: column;
+        max-width: $tabletw;
+        width: $mobilew;
+        height: 100%;
+        align-items: center;
+        --dosCalendario{
+            width: $mobilew;
+            height: 100%;
+            margin-bottom: 2.5%;
+            margin-top: 2.5%;
+            ol{
+                display: grid;
+                grid-template-columns: repeat(7, 1fr);
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                font-size: 1rem;
+                background: rgb(214, 214, 214);
+                font-weight: bold;
+                padding: 4px;
+                text-align: center;
+            }
+            h4{
+                text-align: center;
+                font-size: 1.2rem;
+                background: rgb(214, 214, 214);
+                padding: 0; 
+            }
+            ul{
+                display: grid;
+                grid-template-columns: repeat(7, 1fr);
+                list-style: none;
+                text-align: right;
+                padding: 0;
+                margin: 0;
+                font-size: 1rem;
+                background-color: #dddfdf;
+            }
+        }
+    }
+    .primer__dia{
+        grid-column-start: 3;
+    }
+
+ /* Perfil */
+
+    .contenedor__perfil{
+        padding-top: 25%;
+        padding-bottom: 25%;
+    }
+/* Contacto */
+    .contenedor__contacto--mobile{
+        display: flex;
+        flex-direction: column;
+        max-width: $tabletw;
+        height: 100%;
+        Row{
+            display: flex;
+            flex-direction: row;
+        }
+        Columna{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    .gap__5{
+        gap: 5%;
+    }
+    .paddingbot__5{
+        padding-bottom: 5%;
+    }
+    .paddingtop__5{
+        padding-top: 5%;
+    }
+
+/* Registro-Inicio de sesion */
+    .color__boton{
+        color: $azul;
+        :hover{
+            color: $azul;
+        }
+    }
+/* Footer */
+    .footer{
+        height: 150px;
+        position: absolute;
+        bottom: 0;
+        width: $mobilew;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contenedor__footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $rosa;
+        max-width: $tabletw;
+        padding-top: 0.5rem;
+        padding-bottom: 4rem;
+        width: $mobilew;
+        height: 100%;
+        a{
+            color: $blanco;
+        }
+        --icon{
+            font-size: 1.5rem;
+        }
+    }
+    .ayuda{
+        font-size: 1.2rem;
+    }
+    .contenedor__footerT{
+        display: none;
+    }
+}
+/* Tablet */
+@media (min-width: 721px){
+    .titulo{
+        font-size: 1.5rem;
+        font-family: 'Quicksand', sans-serif;
+        color: $azul;
+        text-decoration: none;
+        :hover{
+            color: $azul;
+        }
+    }
+    /* Header */
+    .contenedor__header--mobile{
+        display: none;
+    }
+    .contenedor__header--tablet{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: $rosa 1px;
+        background-color: $blanco ;
+        box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.2);
+        padding-bottom: 0.2rem;
+        margin-bottom: 0.5rem;
+        width: $tabletw;
+        height: 100%;
+        align-items: center;
+        font-size: 2rem;
+        --tabletBoton{
+            background-color: $rosa;
+            border-color: $rosa;
+            color: $blanco;
+            :hover{
+                background-color: $rosa;
+            }
+            :focus{
+                background-color: $rosa;
+            }
+        }
+        --tabletBorde{
+            border-color: $rosa;
+            color: $blanco;
+        }
+    
+    }
+
+    .flex__header{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .contenedor__header--escritorio{
+        display: none;
+    }
+
+    .derecha__uno{
+        right: -5%;
+    }
+
+    /* Main */
+    .borde__ca{
+        border-radius: 2.5%;
+    }
+    .contenedor__libros{
+        display: flex;
+        flex-direction: row;
+        width: $tabletw;
+        height: 100%;
+        justify-content: space-between;
+        padding-top: 1rem;
+        img{
+            width: 8rem;
+            height: 12rem;
+            border: 0;
+            transition: transform .3s ease-out;
+            :hover{
+                transform: scale(1.1);
+            }
+        }
+        --caja{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 1.2rem;
+            font-style: italic;
+        }
+    }
+    .overflow__radius{
+        overflow: hidden;
+        border-radius: 5%;
+    }
+    /* Subcripcion */
+
+    .contenedor__subscripcion{
+        display: flex;
+        flex-direction: row;
+        background-color: $azul;
+        border-radius: 1.3%;
+        align-items: center;
+        width: $mobilew;        
+        justify-content: space-evenly;
+        padding: 0%;
+        height: 100%;
+        
+    }
+    .sub{
+        display: flex;
+        flex-direction: column;
+        font-size: 1.3rem;
+        color:#dddfdf;
+        align-items: center;
+        padding-top: 1.5%;
+        padding-bottom: 1.5%;
+        margin: 0%;
+        align-items: flex-start;
+        width: $mobilew;
+        height: 100%;
+        p{
+            font-size: 1rem;
+            margin-bottom: 0rem;
+            padding-bottom: 0.2rem;
+        }
+    }
+    .marginbot__cinco{
+        margin-bottom: 5%;
+        align-self: center;
+    }
+    .boton__subMobile{
+        display: none;
+    }
+    .contenedor__botones{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 45.5%;
+        padding-right: 13%;
+        padding-top: 1%;
+
+    }
+    .boton__sub{
+        display: flex;
+        background-color: $rosa;
+        border-color: $rosa;
+        :hover   {
+            background-color: #a07174;
+            border-color: $rosa;
+        }
+        :focus   {
+            background-color: #a07174;
+            border-color: $rosa;
+        }
+    }
+    /* Eventos */
+
+
+    .contenedor__eventos{
+        display: flex;
+        flex-direction: column;
+        width: $tabletw;
+        height: 100%;
+        --dos{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: $tabletw;
+            height: 100%;
+            Texto{
+                display: flex;
+                flex-direction: column;
+                
+            }
+            Calendario{
+                width: 48%;
+                height: 100%;
+            }
+        }
+    }
+    /* Contacto */
+
+    .contenedor__contacto{
+        display: flex;
+        flex-direction: column;
+        width: $tabletw;
+        height: 100%;
+        --columna{
+            display: flex;
+            flex-direction: column;
+        }
+        --row{
+            display: flex;
+            flex-direction: row;
+        }
+    }
+    .gap__15{
+        gap: 15%;
+    }
+    .paddingtop__tres{
+        padding-top: 3%;
+    }
+    
+    .paddingbot__5{
+        padding-bottom: 0%;
+    }
+    .paddingtop__5{
+        padding-top: 0%;
+    }
+    /* Perfil */
+
+    .contenedor__perfil{
+        padding-top: 50%;
+        padding-bottom: 50%;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    /* Footer */
+    .contenedor__footer{
+        display: none;
+    }
+    
+
+    .contenedor__footerT{
+        display: flex;
+        flex-direction: row;
+        background-color: $rosa ;
+        width: $tabletw;
+        height: 150px;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 0.5rem;
+        margin-top: 1.2rem;
+        padding-bottom: 0.5rem;
+        a{
+            color: $blanco;
+        }
+        --icon{
+            font-size: 1.8rem;
+        }
+        --contacto{
+            display: flex;
+            flex-direction: column;
+            color: $blanco;
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+}
+/* PC */
+@media (min-width: 1080px){
+    
+    main{
+        height: 100%;
+    }
+    
+    /* Header */
+    .contenedor__header--tablet{
+        display: none;
+    }
+
+    .contenedor__header--escritorio{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom:$rosa 1px;
+        background-color: $blanco ;
+        box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.2);
+        padding-bottom: 0.2rem;
+        margin-bottom: 0.5rem;
+        width: $escritoriow;
+        height: 100%;
+        align-items: center;
+        font-size: 2rem;
+        Boton{
+            background-color: $rosa;
+            border-color: $rosa;
+            color: $blanco;
+            :hover{
+                background-color: $rosa;
+            }
+            :focus{
+                background-color: $rosa;
+            }
+        }
+        Borde{
+            border-color: $rosa;
+            color: $blanco;
+        }
+        
+
+    }
+    .derecha__dos{
+        right: -70%;
+    }
+    /* Main */
+    .contenedor__recomendados{
+        display: flex;
+        flex-direction: column;
+        max-width: $escritoriow;
+        width: $escritoriow;
+        height: 100%;
+    }
+    .contenedor__libros{
+        display: flex;
+        flex-direction: row;
+        max-width: $escritoriow;
+        width: $mobilew;
+        height: 100%;
+        justify-content: space-between;
+        padding-top: 1rem;
+    }
+    /* Subscripcion */
+    .contenedor__subscripcion{
+        display: flex;
+        flex-direction: row;
+        background-color: $azul;
+        border-radius: 1.3%;
+        align-items: center;
+        width: $mobilew;        
+        justify-content: space-evenly;
+        max-width: $escritoriow;
+        height: auto;
+    }
+    .contenedor__botones {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 47.5%;
+        padding-right: 13%;
+        padding-top: 1%;}
+    /* Eventos */
+
+    .contenedor__eventos{
+        display: flex;
+        flex-direction: column;
+        max-width: $escritoriow;
+        height: 100%;
+        width: $mobilew;
+        --dos{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: $escritoriow;
+            height: 100%;
+        }
+    }
+    /* Footer */
+    .contenedor__footerT{
+        display: flex;
+        flex-direction: row;
+        background-color: $rosa ;
+        width: $escritoriow;
+        height: 150px;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 0.5rem;
+        margin-top: 1.2rem;
+        padding-bottom: 0.5rem;
+    }
+}
