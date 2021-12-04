@@ -1,6 +1,5 @@
 // Variables
 $mobilew: 100%;
-$mobilemx: 720px;
 $tabletw: 720px;
 $escritoriow: 1080px;
 $rosa: #cc9fa2;
@@ -327,7 +326,7 @@ body{
         height: 100%;
         align-items: center;
         font-size: 2rem;
-        --tabletBoton{
+        Boton{
             background-color: $rosa;
             border-color: $rosa;
             color: $blanco;
@@ -338,7 +337,7 @@ body{
                 background-color: $rosa;
             }
         }
-        --tabletBorde{
+        Borde{
             border-color: $rosa;
             color: $blanco;
         }

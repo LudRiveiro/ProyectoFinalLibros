@@ -286,8 +286,7 @@ body {
     background-color: #dddfdf;
   }
   .primer__dia {
-    -ms-grid-column: 3;
-        grid-column-start: 3;
+    grid-column-start: 3;
   }
   /* Perfil */
   .contenedor__perfil {

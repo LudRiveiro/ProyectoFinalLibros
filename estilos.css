@@ -128,6 +128,9 @@ body{
         height: 13rem;
         border-radius: 2.5%;
     }
+    .contenedor__libros--caja p{
+        align-self: center;
+    }
     
     /* Subscripcion */
     .contenedor__subscripcion{
