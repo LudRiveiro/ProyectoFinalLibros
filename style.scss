@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 // Variables
 $mobilew: 100%;
 $tabletw: 720px;
@@ -95,14 +96,12 @@ body{
             color: $azul;
         }
     }
-
     .contenedor__recomendados{
         display: flex;
         flex-direction: column;
         max-width: $tabletw;
         width: $mobilew;
         height: 100%;
-        
     }
     .contenedor__libros{
     display: flex;
@@ -112,7 +111,6 @@ body{
     height: 100%;
     align-items: center;
     }
-
     .contenedor__libros--caja{
         height: 100%;
         width: 75%;
@@ -128,7 +126,6 @@ body{
         height: 13rem;
         border-radius: 2.5%;
     }
-    
     /* Subscripcion */
     .contenedor__subscripcion{
         display: flex;
@@ -156,7 +153,6 @@ body{
             margin: 0%;
             padding: 1%;
         }
-
     }
     .boton__subMobile{
         background-color: $rosa;
@@ -171,13 +167,11 @@ body{
         :focus   {
             background-color: #a07174;
             border-color: $rosa;
-        
         }
     }
     .boton__sub{
         display: none;
     }
-
     /* Eventos */
     .contenedor__eventos{
         display: flex;
@@ -224,14 +218,12 @@ body{
     .primer__dia{
         grid-column-start: 3;
     }
-
- /* Perfil */
-
+    /* Perfil */
     .contenedor__perfil{
         padding-top: 25%;
         padding-bottom: 25%;
     }
-/* Contacto */
+    /* Contacto */
     .contenedor__contacto--mobile{
         display: flex;
         flex-direction: column;
@@ -255,15 +247,14 @@ body{
     .paddingtop__5{
         padding-top: 5%;
     }
-
-/* Registro-Inicio de sesion */
+    /* Registro-Inicio de sesion */
     .color__boton{
         color: $azul;
         :hover{
             color: $azul;
         }
     }
-/* Footer */
+    /* Footer */
     .footer{
         height: 150px;
         position: absolute;
@@ -341,22 +332,17 @@ body{
             border-color: $rosa;
             color: $blanco;
         }
-    
     }
-
     .flex__header{
         display: flex;
         justify-content: center;
     }
-    
     .contenedor__header--escritorio{
         display: none;
     }
-
     .derecha__uno{
         right: -5%;
     }
-
     /* Main */
     .borde__ca{
         border-radius: 2.5%;
@@ -390,7 +376,6 @@ body{
         border-radius: 5%;
     }
     /* Subcripcion */
-
     .contenedor__subscripcion{
         display: flex;
         flex-direction: row;
@@ -401,7 +386,6 @@ body{
         justify-content: space-evenly;
         padding: 0%;
         height: 100%;
-        
     }
     .sub{
         display: flex;
@@ -435,7 +419,6 @@ body{
         padding-left: 45.5%;
         padding-right: 13%;
         padding-top: 1%;
-
     }
     .boton__sub{
         display: flex;
@@ -451,8 +434,6 @@ body{
         }
     }
     /* Eventos */
-
-
     .contenedor__eventos{
         display: flex;
         flex-direction: column;
@@ -476,7 +457,6 @@ body{
         }
     }
     /* Contacto */
-
     .contenedor__contacto{
         display: flex;
         flex-direction: column;
@@ -497,7 +477,6 @@ body{
     .paddingtop__tres{
         padding-top: 3%;
     }
-    
     .paddingbot__5{
         padding-bottom: 0%;
     }
@@ -505,20 +484,16 @@ body{
         padding-top: 0%;
     }
     /* Perfil */
-
     .contenedor__perfil{
         padding-top: 50%;
         padding-bottom: 50%;
         padding-right: 0;
         padding-left: 0;
     }
-
     /* Footer */
     .contenedor__footer{
         display: none;
     }
-    
-
     .contenedor__footerT{
         display: flex;
         flex-direction: row;
@@ -548,16 +523,13 @@ body{
 }
 /* PC */
 @media (min-width: 1080px){
-    
     main{
         height: 100%;
     }
-    
     /* Header */
     .contenedor__header--tablet{
         display: none;
     }
-
     .contenedor__header--escritorio{
         display: flex;
         flex-direction: row;
@@ -586,8 +558,6 @@ body{
             border-color: $rosa;
             color: $blanco;
         }
-        
-
     }
     .derecha__dos{
         right: -70%;
@@ -629,7 +599,6 @@ body{
         padding-right: 13%;
         padding-top: 1%;}
     /* Eventos */
-
     .contenedor__eventos{
         display: flex;
         flex-direction: column;

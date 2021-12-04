@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 a {
   color: #cc9fa2;
   text-decoration: none;
@@ -622,7 +623,7 @@ body {
     width: 720px;
     height: 100%;
   }
-  .contenedor__eventos--dos Texto {
+  .contenedor__eventos--dosTexto {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
